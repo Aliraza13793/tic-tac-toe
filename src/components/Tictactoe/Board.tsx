@@ -18,7 +18,7 @@ const checkWinner=()=>{
     ];
     for(let logic of winnerLogic){
         const [a,b,c]=logic;
-        if(state[a] ===null && state[a]===state[b] && state[a] === state[c]){
+        if(state[a] !==null && state[a]===state[b] && state[a] === state[c]){
             return state[a];
         }
     }
